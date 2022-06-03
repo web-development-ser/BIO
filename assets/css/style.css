@@ -132,20 +132,22 @@ footer {
     color: #ffffff;
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 769px) {
     article img {
         width: 20%;
     }
 }
 
-@media (max-width: 600px) {
+@media screen and (min-width: 481px) {
     article img {
         width: 20%;
         border: #202225 solid 1px;
     }
 }
-@media (max-width: 400px) {
+/*
+@media only screen and (min-width: 400px) {
     article img {
         width: 30%;
     }
 }
+*/
