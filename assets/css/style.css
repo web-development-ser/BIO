@@ -1,0 +1,151 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* General body */
+body {
+    background-color: #242636;
+    font-family: 'Poppins', sans-serif;
+
+    height: 150vh;
+}
+
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #ffffff;
+}
+
+article p {
+    margin-top: -7px;
+}
+article img {
+    width: 10%;
+    height: 100%;
+}
+
+/* General styles Animation */
+.button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    border: #C21330 3px solid;
+    color: #ffffff;
+    position: relative;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+
+}
+
+.button::before,
+.button::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: inherit;
+    transition: all .5s ease-in;
+}
+
+.button::before {
+    top: -15px;
+    left: -15px;
+    border-width: 3px 0 0 3px;
+}
+
+.button::after {
+    bottom: -15px;
+    right: -15px;
+    border-width: 0 3px 3px 0;
+}
+
+.button:hover::before,
+.button:hover::after {
+    width: calc(100% + 27px);
+    height: calc(100% + 27px);
+}
+
+/* Configurations - logo */
+.insta {
+    top: 50%;
+    left: 50%;
+    width: 17rem;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    background: linear-gradient(45deg,
+        #f09433 0%,
+        #e6683c 25%,
+        #dc2743 50%,
+        #cc2366 75%,
+        #bc1888 100%
+      );
+
+}
+
+.git {
+    top: 70%;
+    left: 50%;
+    width: 17rem;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    background: linear-gradient(261.65deg,
+        #202225 0%,
+        #2d2f31 100%
+        );
+}
+
+.discord {
+    top: 90%;
+    left: 50%;
+    width: 17rem;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    background: linear-gradient(58deg,
+        #722cd8 8%,
+        #9a56fd 98%
+        );
+
+}
+
+.linke {
+    top: 110%;
+    left: 50%;
+    width: 17rem;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    background: rgb(86, 123, 246);
+    background: linear-gradient(90deg,
+        rgb(86, 123, 246) 0%,
+        rgba(47, 41, 157, 1) 100%
+    );
+
+}
+
+footer {
+    text-align: center;
+    margin-top: 95vh;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    article img {
+        width: 20%;
+    }
+}
+
+@media (max-width: 600px) {
+    article img {
+        width: 20%;
+        border: #202225 solid 1px;
+    }
+}
+@media (max-width: 400px) {
+    article img {
+        width: 30%;
+    }
+}
