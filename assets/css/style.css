@@ -132,13 +132,13 @@ footer {
     color: #ffffff;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (max-width: 769px) {
     article img {
         width: 20%;
     }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (max-width: 481px) {
     article img {
         width: 20%;
         border: #202225 solid 1px;
