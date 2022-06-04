@@ -1,5 +1,6 @@
 /* Import font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
 
 /* General body */
@@ -7,17 +8,20 @@ body {
     background-color: #242636;
     font-family: 'Poppins', sans-serif;
 
-    height: 150vh;
+    /*height: 150vh;*/
 }
 
-
-article {
+/* Header - Stylization */
+.article-one {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
     color: #ffffff;
+
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 1.3rem;
 }
 
 article p {
@@ -28,18 +32,26 @@ article img {
     height: 100%;
 }
 
+
 /* General styles Animation */
 .button {
-    display: inline-block;
+    /*display: inline-block;*/
     text-decoration: none;
     font-size: 25px;
     border: #C21330 3px solid;
     color: #ffffff;
-    position: relative;
-    position: absolute;
+    /*position: relative;
+    position: absolute;*/
     transform: translate(-50%, -50%);
     color: aliceblue;
+}
 
+/* General styles cards */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 .button::before,
@@ -72,8 +84,8 @@ article img {
 
 /* Configurations - logo */
 .insta {
-    top: 50%;
-    left: 50%;
+    /*top: 50%;
+    left: 50%;*/
     width: 17rem;
     text-align: center;
     padding: 20px 0 20px 0;
@@ -85,36 +97,39 @@ article img {
         #bc1888 100%
       );
 
+      margin: -20px 50%;
 }
 
 .git {
-    top: 70%;
-    left: 50%;
+    /*top: 70%;
+    left: 50%;*/
     width: 17rem;
     text-align: center;
     padding: 20px 0 20px 0;
     background: linear-gradient(261.65deg,
         #202225 0%,
         #2d2f31 100%
-        );
+    );
+
+    margin: 70px 50%;
 }
 
 .discord {
-    top: 90%;
-    left: 50%;
+    /*top: 90%;
+    left: 50%;*/
     width: 17rem;
     text-align: center;
     padding: 20px 0 20px 0;
     background: linear-gradient(58deg,
         #722cd8 8%,
         #9a56fd 98%
-        );
-
+    );
+    margin: 70px 50%;
 }
 
 .linke {
-    top: 110%;
-    left: 50%;
+    /*top: 110%;
+    left: 50%;*/
     width: 17rem;
     text-align: center;
     padding: 20px 0 20px 0;
@@ -124,14 +139,60 @@ article img {
         rgba(47, 41, 157, 1) 100%
     );
 
+    margin: -20px 50%;
 }
 
 footer {
     text-align: center;
-    margin-top: 95vh;
+    /*margin-top: 95vh;*/
     color: #ffffff;
 }
 
+@media screen and (max-width: 600px) {
+    .insta {
+        margin: -20px 50%;
+    }
+
+    .git {
+        margin: 70px 50%;
+    }
+
+    .discord {
+        margin: 70px 50%;
+    }
+
+    .linke {
+        margin: -20px 50%;
+    }
+
+    .article-one {
+        font-size: 1rem;
+    }
+    .article-one img {
+        width: 15%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .insta {
+        margin: -20px 50%;
+    }
+
+    .git {
+        margin: 70px 50%;
+    }
+
+    .discord {
+        margin: 70px 50%;
+    }
+
+    .linke {
+        margin: -20px 50%;
+    }
+}
+
+/*
 @media screen and (max-width: 769px) {
     article img {
         width: 20%;
@@ -144,7 +205,7 @@ footer {
         border: #202225 solid 1px;
     }
 }
-/*
+
 @media only screen and (min-width: 400px) {
     article img {
         width: 30%;
